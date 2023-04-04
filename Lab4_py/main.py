@@ -140,7 +140,7 @@ print("\nUnion set is: ", union)
 print()
 d = dict()
 for x in range(1, 31):
-    d[x] = x * x - 1
+    d[x] = x * (x - 1)
 print(d)
 
 for key, value in d.items():
