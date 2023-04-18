@@ -26,6 +26,13 @@ print(f"e^{n} = {result}")
 
 
 def compute_sum(n2):
+    """
+    This function computes the sum of the series (-1)^(k+1)/k for k from 1 to n ,
+    using recursion and a global variable.
+
+    :paramater n: The number of terms in the series.
+    """
+
     global total_sum
     if n2 == 0:
         return
@@ -37,4 +44,5 @@ def compute_sum(n2):
 total_sum = 0
 n2 = int(input("Enter a value for n: "))
 compute_sum(n2)
+print(compute_sum.__doc__)
 print("The sum is : ", total_sum)
